@@ -7,7 +7,7 @@ namespace CourseProject_Report
     {
         static void Main(string[] args)
         {
-            //declare variables 
+            /*DECLARING VARIABLES*/
             char[] Guess_Word = "Hello".ToLower().ToArray();            
             char Letter;
             int Counter = 0, Incorrect_Guess = 0, Max_Guess = 10;
@@ -15,7 +15,8 @@ namespace CourseProject_Report
             Console.WriteLine("Welcome to the hangman game! \n\n");
 
             Console.Write("You have {0} tries to guess this word: " , Max_Guess);
-            //displaying the word hidden with special characters
+            
+            //DISPLAYING THE WORD HIDDEN WITH SPECIAL CHARACTERS
             foreach (var _letter in Guess_Word)
             {
                 Console.Write("*");
